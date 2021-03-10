@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <style>
+        .news-list {
+            width: 300px;
+            height: 357px;
+            margin: 50px auto;
+            border-top: 1px solid #CAE8C1;
+            background-color: seashell;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .title {
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+
+        .title a {
+            color: #40406B;
+            font-weight: bold;
+        }
+
+        .news-img {
+            height: 150px;
+        }
+
+        .img-title {
+            color: #fff;
+            font-weight: bold;
+            margin-top: -30px;
+            margin-left: 30px;
+        }
+
+        .news-ul {
+            margin-top: 20px;
+        }
+
+        .news-ul li::before {
+            content: '■';
+            font-size: 12px;
+            color: #666;
+            margin-right: 4px;
+        }
+
+        .news-ul li {
+            margin-bottom: 17px;
+        }
+
+        .news-ul li>a {
+            color: #666;
+        }
+
+        .news-ul li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news-list">
+        <h2 class="title">
+            <a href="">体育</a>
+        </h2>
+        <div class="news-img">
+            <img src="./sports.png" alt="体育">
+            <h3 class="img-title">
+                费德勒首负迪米 扶额摇头不满发挥
+            </h3>
+        </div>
+        <ul class="news-ul">
+            <li><a href="">欢迎来到网易新闻</a></li>
+            <li><a href="">欢迎来到网易新闻</a></li>
+            <li><a href="">欢迎来到网易新闻</a></li>
+            <li><a href="">欢迎来到网易新闻</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

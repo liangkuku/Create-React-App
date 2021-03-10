@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* p标签中包含title属性的元素 */
+        /* p[title]{
+            color:teal;
+        } */
+        
+        /* p标签中包含指定属性和指定值的元素 */
+        /* p[title=abc]{
+            color: yellow;
+        } */
+
+        /* p标签中包含指定属性且以指定值开头的元素 */
+        /* p[title^=abc]{
+            color: blue;
+        } */
+
+        /* p标签中包含指定属性且以指定值结尾的元素 */
+        /* p[title$=abc]{
+            color: brown;
+        } */
+
+        /* p标签中包含指定属性且包含指定值的元素 */
+        /* p[title*=abc]{
+            color: blueviolet;
+        } */
+    </style>
+</head>
+<body>
+    <p title="abc">朝辞白帝彩云间，</p>
+    <p title="abcdef">千里江陵一日还。</p>
+    <p title="qqqqabc">两岸猿声啼不住，</p>
+    <p>轻舟已过万重山。</p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        /* 第一个子元素 */
+        /* ul > li:first-child{
+            color: red;
+        } */
+        
+        /* 最后一个子元素 */
+        /* ul > li:last-child{
+            color: seagreen;
+        } */
+
+        /*选中某个元素，参数为任意数字或odd、event */
+        /* ul > li:nth-child(odd){
+            color: skyblue;
+        } */
+
+        /* ul中类型为li的第一个元素 */
+        /* ul > li:first-of-type{
+            color: yellowgreen;
+        } */
+
+        /* ul中类型为li的最后一个元素 */
+        /* ul > li:last-of-type{
+            color: chocolate;
+        } */
+
+        /* ul中类型为li的第n个元素 */
+        /* ul > li:nth-of-type(even){
+            color: tomato;
+        } */
+
+        /* 否定伪类选择器 */
+        ul > li:not(:nth-child(odd)){
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <span>span标签</span>
+        <li>第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+    </ul>
+</body>
+</html>

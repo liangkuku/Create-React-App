@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07盒子的outline与border</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 阴影参数分别为（水平偏移量，垂直偏移量，模糊半径，颜色（包含透明的）） */
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+        }
+
+        .box1:hover{
+            /* 不会影响其他元素 */
+            outline: 10px solid green;
+            /* 会移动其他元素 */
+            /* border: 10px solid green; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <span>
+        span标签
+    </span>
+</body>
+</html>
